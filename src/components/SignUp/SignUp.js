@@ -49,15 +49,15 @@ const SignUp = () => {
                 <form onSubmit={handleCreateUser}>
                     <div className="input-group">
                         <label htmlFor="email">Email</label>
-                        <input onBlur={handleEmailBlur} type="email" name="email" id="" required/>
+                        <input onBlur={handleEmailBlur} type="email" name="email" id="email" required/>
                     </div>
                     <div className="input-group">
                         <label htmlFor="password">Password</label>
-                        <input onBlur={handlePasswordBlur} type="password" name="password" id=""  required/>
+                        <input onBlur={handlePasswordBlur} type="password" name="password" id="password"  required/>
                     </div>
                     <div className="input-group">
                         <label htmlFor="confirm-password">Confirm Password</label>
-                        <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" />
+                        <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="confirm-password" />
                     </div>
                     <p style={{color: 'red'}}>{error}</p>
                     <input className='form-submit' type="submit" value="Sign Up"  required/>
